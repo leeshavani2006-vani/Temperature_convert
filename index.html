@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel =stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/8f9d86139c.js"></script>
+</head>
+<body>
+    <main class="container">
+        <header clas="header">
+            <div class="logo">
+                <p><i class="fa-solid fa-temperature-empty"></i>Temp<span>Ease</span></p>
+            </div>
+            <p class="topsmall"> smart temperature conversion tool</p>
+            <h1 class="toplarge">temp<span>Ease</span></h1>
+            <p class="topmedium">Convert temperatures simply and instantly</p>
+        <section class="temp-converter">
+            <h2 class="converter-heading">Temperature Converter</h2>
+            <div class="input-section">
+                <label for="temperature">Enter Temperature :</label>
+                <input type="number" id="temp" placeholder="Enter value">
+                
+            </div>
+            <p id ="message"></p>
+           
+            <div class="unit-section">
+                <label for="unit">Select Unit :</label>
+                <select id="unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+            <button  onclick="convertTemp()"id="convert-btn">Convert</button>
+           
+            <div class="result-section">
+               <div class="card">
+                <h3><i class="fa-solid fa-temperature-full icon-bg blue"></i>celsius</h3>
+                <p id="celsius-result">0 °C</p>
+               </div>
+                <div class="card">
+                <h3><i class="fa-solid fa-temperature-full icon-bg orange"></i>fahrenheit</h3>
+                <p id="fahrenheit-result">0 °F</p>
+               </div>
+                <div class="card">
+                <h3><i class="fa-solid fa-temperature-full icon-bg green"></i>kelvin</h3>
+                <p id="kelvin-result">0 K</p>
+               </div>
+                </section>
+    </main>
+        <script src="script.js"></script>
+    
+    
+</body>
+</html>
